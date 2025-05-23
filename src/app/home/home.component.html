@@ -1,0 +1,22 @@
+<header class="top-bar">
+    <div class="left-section">
+        <img src="D:\ProjetosAngular\marco2\src\app\assets\images\ironmonster.svg" alt="Logo Iron Monster" class="logo" />
+    </div>
+
+    <div class="right-section">
+        <button class="icon-button">
+            <i class="fas fa-search"></i>
+        </button>
+        <button class="icon-button">
+            <i class="fas fa-user-circle"></i>
+        </button>
+    </div>
+</header>
+<nav class="category-bar">
+    <ul>
+        <li *ngFor="let categoria of categorias">
+            {{ categoria.nome }}
+            <i class="fas fa-chevron-down"></i>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,12 @@
+<nav class="">
+    <!-- <div class="logo">IronMonster</div> -->
+
+    @for (item of itemsMenu; track item) {
+        <ul>
+            <li routerLink="{{item.link}}">
+                <a>{{item.label}}</a>
+            </li>
+        </ul>
+    }
+
+</nav>
