@@ -1,12 +1,34 @@
-<nav class="">
-    <!-- <div class="logo">IronMonster</div> -->
-
-    @for (item of itemsMenu; track item) {
+<header>
+    <nav>
+        <img src="assets/logoSemFundo.png" alt="logo" routerLink="/" class="full-width-image" style="width: 200px;">
         <ul>
-            <li routerLink="{{item.link}}">
-                <a>{{item.label}}</a>
+            <!-- Marcas com submenu -->
+            <li class="bold-item dropdown">
+                MARCAS <span class="arrow">⯆</span>
+                <ul class="submenu">
+                    <li>DARK LAB</li>
+                    <li>MAX TITANIUM</li>
+                    <li>BLACK SKULL</li>
+                    <li>GROWTH SUPLEMENTS</li>
+                </ul>
             </li>
-        </ul>
-    }
 
-</nav>
+            <!-- Whey sem submenu -->
+            <li cla>
+                <a routerLink="/produtos/whey">CREATINA</a>
+            </li>
+
+            <!-- Pré-treino sem submenu -->
+            <li>
+                <a routerLink="/produtos/pre-treino">PROTEÍNA</a>
+            </li>
+            <li>
+                <a routerLink="/produtos/pre-treino">PRÉ-TREINO</a>
+            </li>
+
+            <!-- Entrar e Cadastrar-se -->
+            <li class="entrar"><a routerLink="/login">Entrar</a></li>
+            <li class="entrar"><a routerLink="/cadastro">Cadastrar-se</a></li>
+        </ul>
+    </nav>
+</header>
