@@ -1,12 +1,34 @@
-<nav class="">
-    <!-- <div class="logo">IronMonster</div> -->
-
-    @for (item of itemsMenu; track item) {
+<header>
+    <nav>
+        <img src="assets/logoSemFundo.png" alt="logo" routerLink="/" class="full-width-image" style="width: 200px;">
         <ul>
-            <li routerLink="{{item.link}}">
-                <a>{{item.label}}</a>
+            <!-- 
+            <li class="bold-item dropdown">
+                MARCAS <span class="arrow">⯆</span>
+                <ul class="submenu">
+                    <li>MAX TITANIUM</li>
+                    <li>BLACK SKULL</li>
+                    <li>GROWTH SUPLEMENTS</li>
+                </ul>
             </li>
-        </ul>
-    }
+            -->
+            
+            <li>
+                <a [routerLink]="'/'" fragment="featured">DESTAQUES</a>
+            </li>
 
-</nav>
+            <!-- Creatina corretamente estruturado -->
+            <li>
+                <a [routerLink]="['/']" fragment="creatina">CREATINA</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" fragment="proteina">PROTEÍNA</a>
+            </li>
+
+
+            <!-- Login e Cadastro -->
+            <li class="entrar"><a routerLink="/login">Entrar</a></li>
+            <li class="entrar"><a routerLink="/cadastro">Cadastrar-se</a></li>
+        </ul>
+    </nav>
+</header>
