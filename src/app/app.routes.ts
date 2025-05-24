@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { ProdutosListagemComponent } from './pages/produtos-listagem/produtos-listagem.component';
+import { ProdutosFormComponent } from './pages/produtos-form/produtos-form.component';
 
 export const routes: Routes = [
     {
@@ -19,4 +21,19 @@ export const routes: Routes = [
         component: CadastroComponent,
         title: 'Cadastro',
     },
+    {
+        path: 'produtos',
+        component: ProdutosListagemComponent,
+        title: 'Gerenciamento de Produtos',
+    },
+    {
+        path: 'produtos/incluir',
+        component: ProdutosFormComponent,
+        title: 'Inclusão de Produtos',
+    },
+    {
+        path: 'produtos/alterar/:id',
+        component: ProdutosFormComponent,
+        title: 'Alteração de Produtos',
+    }
 ];

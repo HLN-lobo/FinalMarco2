@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": "2",
+      "nome": "Whey",
+      "marca": "IntegralMedica",
+      "preco": 94.9,
+      "tamanho": "900g"
+    },
+    {
+      "id": "3",
+      "nome": "Whey",
+      "marca": "BlackSkull",
+      "preco": 87.9,
+      "tamanho": "900g"
+    },
+    {
+      "id": "5",
+      "nome": "Whey",
+      "marca": "MaxTitanium",
+      "preco": 91.9,
+      "tamanho": "900g"
+    },
+    {
+      "id": "6",
+      "nome": "Creatina",
+      "marca": "Growth",
+      "preco": 87.9,
+      "tamanho": "900g"
+    },
+    {
+      "id": "7",
+      "nome": "Creatina",
+      "marca": "IntegralMedica",
+      "preco": 87.9,
+      "tamanho": "900g"
+    },
+    {
+      "id": "8",
+      "nome": "Creatina",
+      "marca": "BlackSkull",
+      "preco": 87.9,
+      "tamanho": "900g"
+    }
+  ]
+}

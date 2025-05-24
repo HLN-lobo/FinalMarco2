@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
@@ -19,7 +18,7 @@ export class LoginComponent {
   onBotaoClicado(): void {
     if (this.login.trim() && this.senha.trim()) {
       if (this.login === 'admin' && this.senha === '123') {
-        this.router.navigate(['/pessoaListagem']);
+        this.router.navigate(['/produtos']);
       } else {
         alert('Dados inválidos!');
       }
