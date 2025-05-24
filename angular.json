@@ -21,79 +21,78 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+            ,
+          "styles": [
+            "src/styles.css"
+          ],
+          "scripts": []
+        },
+        "configurations": {
+          "production": {
+            "budgets": [
               {
-                "glob": "**/*",
-                "input": "public"
+                "type": "initial",
+                "maximumWarning": "500kB",
+                "maximumError": "1MB"
+              },
+              {
+                "type": "anyComponentStyle",
+                "maximumWarning": "4kB",
+                "maximumError": "8kB"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            "outputHashing": "all"
           },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "myapp:build:production"
-            },
-            "development": {
-              "buildTarget": "myapp:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+          "development": {
+            "optimization": false,
+            "extractLicenses": false,
+            "sourceMap": true
           }
+        },
+        "defaultConfiguration": "production"
+      },
+      "serve": {
+        "builder": "@angular-devkit/build-angular:dev-server",
+        "configurations": {
+          "production": {
+            "buildTarget": "myapp:build:production"
+          },
+          "development": {
+            "buildTarget": "myapp:build:development"
+          }
+        },
+        "defaultConfiguration": "development"
+      },
+      "extract-i18n": {
+        "builder": "@angular-devkit/build-angular:extract-i18n"
+      },
+      "test": {
+        "builder": "@angular-devkit/build-angular:karma",
+        "options": {
+          "polyfills": [
+            "zone.js",
+            "zone.js/testing"
+          ],
+          "tsConfig": "tsconfig.spec.json",
+          "assets": [
+            {
+              "glob": "**/*",
+              "input": "public"
+            }
+          ],
+          "styles": [
+            "src/styles.css"
+          ],
+          "scripts": []
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "31892f94-7963-434d-bae8-80f1d11bf1ce"
   }
+},
+"cli": {
+  "analytics": "31892f94-7963-434d-bae8-80f1d11bf1ce"
+}
 }
