@@ -1,88 +1,93 @@
 .content-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 128px;
-    text-align: left;
+    width: 60%;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .content-container h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(146, 0, 0);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-.content-container p {
-    font-size: 1.2rem;
-    color: #555;
+.content-container h1::after {
+    content: "";
+    display: block;
+    width: 410px;
+    height: 4px;
+    background-color: rgb(146, 0, 0);
+    margin-top: 8px;
+    border-radius: 4px;
 }
 
 form {
     width: 100%;
-    padding: 10px;
-    margin: 0 auto;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 1rem;
 }
 
 .input-simples,
-.input-submeter {
+.input-id {
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 12px;
-    font-size: 16px;
+    padding: 10px 14px;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
 }
 
-.input-submeter:disabled{
+.input-simples:focus,
+.input-id:focus {
+    outline: none;
+    border-color: rgb(146, 0, 0);
+    box-shadow: 0 0 0 3px rgba(146, 0, 0, 0.2);
+}
+
+.input-simples::placeholder,
+.input-id::placeholder {
+    color: #999;
+}
+
+
+.input-submeter {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.input-submeter:hover {
+    background-color: #293649;
+}
+
+.input-submeter:disabled {
     background-color: #a0a0a0;
     cursor: not-allowed;
     opacity: 0.7;
-  }
-
-.input-id {
-    width: 10%;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.input-submeter {
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: rgb(146, 0, 0);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-.mensagem {
-    margin: 16px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-principal {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    border: 1px solid #ddd;
-    border-radius: 8px;
 }
