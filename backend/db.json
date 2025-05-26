@@ -46,9 +46,9 @@
   "clientes": [
     {
       "id": "1",
-      "nome": "Rafael Araujo",
       "email": "rafa@gmail.com",
       "senha": "87654321",
+      "nome": "Rafael Araujo",
       "telefone": "11992125375",
       "endereco": "Av Interlagos"
     },
