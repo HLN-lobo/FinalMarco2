@@ -54,19 +54,11 @@
     },
     {
       "id": "2",
-      "nome": "Henrique Lobo",
       "email": "rick@gmail.com",
       "senha": "12345678",
+      "nome": "Henrique Lobo",
       "telefone": "11991295442",
       "endereco": "Rua Itinguçu"
-    },
-    {
-      "id": "ab32",
-      "email": "lobo@gmail.com",
-      "senha": "311204Rick",
-      "nome": "Henrique Nogueira",
-      "telefone": "11972222823",
-      "endereco": "Rua mangal"
     }
   ]
 }

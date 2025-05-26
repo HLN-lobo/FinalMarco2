@@ -1,0 +1,33 @@
+<div class="content-container">
+    <h1>{{ titulo }}</h1>
+    <form>
+        <label for="input-id">ID</label><br>
+        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text"
+            [(ngModel)]="cliente.id" />
+        <label for="input-marca">Email</label><br>
+        <input class="input-simples" id="input-marca" name="input-marca" type="text"
+            [(ngModel)]="cliente.email" />
+
+        <label for="input-preco">Senha</label><br>
+        <input class="input-simples" id="input-preco" name="input-preco" type="text" 
+            [(ngModel)]="cliente.senha" />
+        
+        <label for="input-nome">Nome</label><br>
+        <input class="input-simples" id="input-nome" name="input-nome" type="text"
+            [(ngModel)]="cliente.nome" />
+
+        <label for="input-tamanho">Telefone</label><br>
+        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text"
+            [(ngModel)]="cliente.telefone" />
+
+        <label for="input-tamanho">Endereço</label><br>
+        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text"
+            [(ngModel)]="cliente.endereco" />
+
+        <button class="input-submeter"
+            [disabled]="!cliente.id || !cliente.email || !cliente.senha || !cliente.nome || !cliente.telefone || !cliente.endereco"
+            (click)="submeter()">
+            Cadastrar
+        </button>
+    </form>
+</div>

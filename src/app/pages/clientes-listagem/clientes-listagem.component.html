@@ -1,0 +1,35 @@
+<div class="content-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (cliente of listaClientes; track cliente){
+            <tr>
+                <td>{{cliente.id}}</td>
+                <td>{{cliente.email}}</td>
+                <td>{{cliente.senha}}</td>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.telefone}}</td>
+                <td>{{cliente.endereco}}</td>
+                <td>
+                  <button class="btn-editar" [routerLink]="['alterar', cliente.id]">Editar</button>
+                  <button class=" btn-excluir" (click)="excluir(cliente.id!)">Excluir</button>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+
+    </table>
+    <button class="btn-incluir" routerLink="/clientes/incluir">Incluir</button>
+    <a class="btn-incluir" routerLink="/produtos">Gerencimento de Produtos</a>
+</div>

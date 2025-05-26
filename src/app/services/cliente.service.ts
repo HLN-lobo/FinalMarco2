@@ -20,7 +20,7 @@ export class ClienteService {
     return this.http.post<Clientes>(this.API, cliente)
   }
 
-  excluir(id:number): Observable<Clientes>{
+  excluir(id:string): Observable<Clientes>{
     return this.http.delete<Clientes>(this.API + `/${id}`)
   }
 

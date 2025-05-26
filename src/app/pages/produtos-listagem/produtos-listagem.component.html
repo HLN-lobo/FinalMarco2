@@ -19,8 +19,8 @@
                 <td>R$ {{produto.preco}}</td>
                 <td>{{produto.tamanho}}</td>
                 <td>
-                  <button class="btn-editar" [routerLink]="['alterar', produto.id]">Editar</button>
-                  <button class=" btn-excluir" (click)="excluir(produto.id!)">Excluir</button>
+                    <button class="btn-editar" [routerLink]="['alterar', produto.id]">Editar</button>
+                    <button class=" btn-excluir" (click)="excluir(produto.id!)">Excluir</button>
                 </td>
             </tr>
             }
@@ -29,4 +29,5 @@
 
     </table>
     <button class="btn-incluir" routerLink="/produtos/incluir">Incluir</button>
+    <a class="btn-incluir" routerLink="/clientes">Gerencimento de Clientes</a>
 </div>
