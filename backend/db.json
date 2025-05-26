@@ -1,46 +1,72 @@
 {
   "produtos": [
     {
-      "id": "2",
+      "id": "1",
       "nome": "Whey",
       "marca": "IntegralMedica",
       "preco": 94.9,
       "tamanho": "900g"
     },
     {
-      "id": "3",
+      "id": "2",
       "nome": "Whey",
       "marca": "BlackSkull",
       "preco": 87.9,
       "tamanho": "900g"
     },
     {
-      "id": "5",
+      "id": "3",
       "nome": "Whey",
       "marca": "MaxTitanium",
       "preco": 91.9,
       "tamanho": "900g"
     },
     {
-      "id": "6",
+      "id": "4",
       "nome": "Creatina",
       "marca": "Growth",
       "preco": 87.9,
       "tamanho": "900g"
     },
     {
-      "id": "7",
+      "id": "5",
       "nome": "Creatina",
       "marca": "IntegralMedica",
       "preco": 87.9,
       "tamanho": "900g"
     },
     {
-      "id": "8",
+      "id": "6",
       "nome": "Creatina",
       "marca": "BlackSkull",
       "preco": 87.9,
       "tamanho": "900g"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "Rafael Araujo",
+      "email": "rafa@gmail.com",
+      "senha": "87654321",
+      "telefone": "11992125375",
+      "endereco": "Av Interlagos"
+    },
+    {
+      "id": "2",
+      "nome": "Henrique Lobo",
+      "email": "rick@gmail.com",
+      "senha": "12345678",
+      "telefone": "11991295442",
+      "endereco": "Rua Itinguçu"
+    },
+    {
+      "id": "ab32",
+      "email": "lobo@gmail.com",
+      "senha": "311204Rick",
+      "nome": "Henrique Nogueira",
+      "telefone": "11972222823",
+      "endereco": "Rua mangal"
     }
   ]
 }

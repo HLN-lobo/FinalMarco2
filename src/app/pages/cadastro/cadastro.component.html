@@ -4,28 +4,31 @@
             <h1><img src="assets/logoSemFundo.png" alt="logo" style="width: 200px; display: block; margin: 0 auto;">
             </h1>
             <div class="input-box">
-                <input placeholder="Email" type="email" name="usuario" required>
+                <input placeholder="Email" type="email" name="input-email" [(ngModel)]="cliente.email" required>
                 <i class="bx bxs-user"></i>
             </div>
 
             <div class="input-box">
-                <input placeholder="Senha" type="password" name="senha" required>
+                <input placeholder="Senha" type="password" name="input-senha" [(ngModel)]="cliente.senha" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
 
             <div class="input-box">
-                <input placeholder="Nome" type="text" name="senha" required>
+                <input placeholder="Nome" type="text" name="input-nome" [(ngModel)]="cliente.nome" required>
             </div>
 
             <div class="input-box">
-                <input placeholder="Telefone" type="text" name="senha" required>
+                <input placeholder="Telefone" type="text" name="input-telefone" [(ngModel)]="cliente.telefone" required>
             </div>
 
             <div class="input-box">
-                <input placeholder="Endereço" type="text" name="senha" required>
+                <input placeholder="Endereço" type="text" name="input-endereco" [(ngModel)]="cliente.endereco" required>
             </div>
 
-            <button type="button" class="login" id="cadastroButton">Cadastrar</button>
+            <button type="button" class="login" id="cadastroButton"
+                [disabled]="!cliente.email || !cliente.senha || !cliente.nome || !cliente.telefone || !cliente.endereco"
+                (click)="submeterCli()">
+                Cadastrar</button>
 
             <div class="register-link">
                 <p>Já possui cadastro?<a href="./login.html"> Login</a></p>
