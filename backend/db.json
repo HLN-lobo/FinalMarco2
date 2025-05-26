@@ -4,7 +4,7 @@
       "id": "1",
       "nome": "Whey",
       "marca": "IntegralMedica",
-      "preco": 94.9,
+      "preco": "94.9",
       "tamanho": "900g"
     },
     {

@@ -5,12 +5,12 @@
                 style="width: 200px; display: block; margin: 0 auto;" />
 
             <div class="input-box">
-                <input placeholder="Usuário" type="email" name="usuario" required [(ngModel)]="login">
+                <input placeholder="Usuário" type="email" name="usuario" maxlength="40" required [(ngModel)]="login">
                 <i class="bx bxs-user"></i>
             </div>
 
             <div class="input-box">
-                <input placeholder="Senha" type="password" name="senha" required [(ngModel)]="senha">
+                <input placeholder="Senha" type="password" name="senha" maxlength="20" required [(ngModel)]="senha">
                 <i class="bx bxs-lock-alt"></i>
             </div>
 

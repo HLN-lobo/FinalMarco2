@@ -2,26 +2,27 @@
     <h1>{{ titulo }}</h1>
     <form>
         <label for="input-id">ID</label><br>
-        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text"
+        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text" maxlength="255"
             [(ngModel)]="cliente.id" />
+
         <label for="input-marca">Email</label><br>
-        <input class="input-simples" id="input-marca" name="input-marca" type="text"
+        <input class="input-simples" id="input-marca" name="input-marca" type="text" maxlength="40"
             [(ngModel)]="cliente.email" />
 
         <label for="input-preco">Senha</label><br>
-        <input class="input-simples" id="input-preco" name="input-preco" type="text" 
+        <input class="input-simples" id="input-preco" name="input-preco" type="text" maxlength="20"
             [(ngModel)]="cliente.senha" />
         
         <label for="input-nome">Nome</label><br>
-        <input class="input-simples" id="input-nome" name="input-nome" type="text"
+        <input class="input-simples" id="input-nome" name="input-nome" type="text" maxlength="50"
             [(ngModel)]="cliente.nome" />
 
         <label for="input-tamanho">Telefone</label><br>
-        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text"
+        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text" maxlength="11"
             [(ngModel)]="cliente.telefone" />
 
         <label for="input-tamanho">Endereço</label><br>
-        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text"
+        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text" maxlength="30"
             [(ngModel)]="cliente.endereco" />
 
         <button class="input-submeter"

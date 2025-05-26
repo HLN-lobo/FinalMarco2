@@ -2,23 +2,23 @@
     <h1>{{ titulo }}</h1>
     <form>
         <label for="input-id">ID</label><br>
-        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text"
+        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text" maxlength="255"
             [(ngModel)]="produto.id" />
 
         <label for="input-nome">Nome</label><br>
-        <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome" type="text"
+        <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome" type="text" maxlength="40"
             [(ngModel)]="produto.nome" />
 
         <label for="input-marca">Marca</label><br>
-        <input class="input-simples" id="input-marca" name="input-marca" placeholder="Digite a marca"
+        <input class="input-simples" id="input-marca" name="input-marca" placeholder="Digite a marca" maxlength="40"
             type="text" [(ngModel)]="produto.marca" />
 
         <label for="input-preco">Digite o preço</label><br>
-        <input class="input-simples" id="input-preco" name="input-preco" type="text"
+        <input class="input-simples" id="input-preco" name="input-preco" type="text" maxlength="5"
             [(ngModel)]="produto.preco" />
 
         <label for="input-tamanho">Digite o tamanho</label><br>
-        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text"
+        <input class="input-simples" id="input-tamanho" name="input-tamanho" type="text" maxlength="6"
             [(ngModel)]="produto.tamanho" />
 
         <button class="input-submeter"
